@@ -1,0 +1,49 @@
+body{
+    background-color: #012344;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    font-size: 2rem;
+    color: #f2f2f2;
+}
+.payroll_container{
+    text-align: center;
+    width:  20%;
+    padding: 10px;
+    background-color: #ffffff;
+}
+input[type="text"], [type='submit']{
+    margin: 5px;
+    height: 25px;
+}
+input[type="submit"], [type="text"]{
+    width: 90%;
+}
+
+input[type="submit"]{
+    border:none;
+    border-radius: 20px;
+    background-color: #ff0000;
+    color: #ffffff;
+    transition: .3s ease;
+}
+input[type="submit"]:hover{
+    background-color: greenyellow;
+    color: #000000;
+    cursor: pointer;
+}
+input[type="text"]{
+    border: none;
+    border-bottom: 1px solid #eeeeee;
+    outline: none;
+}

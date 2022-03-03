@@ -1,5 +1,3 @@
-
-from http.client import NOT_ACCEPTABLE
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
@@ -27,8 +25,7 @@ def compute_payroll():
         # NOTE: Always return String not any type but string
         return f""" <h2>Gross Pay: {gross_pay} </h2> 
         <h2> Deductions: {deductions}</h2>
-        <h2>Net Pay: {net_pay}</h2>"""
-
+        <h2>Net Pay: {net_pay} {render_template('welcome.html')}</h2>"""
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
